@@ -1,2 +1,13 @@
-/mvnw text eol=lf
-*.cmd text eol=crlf
+# ⚙️ Normalize line endings between Windows and Unix systems
+* text=auto
+
+# 📦 Exclude frontend libraries from language statistics
+src/main/resources/static/** linguist-vendored
+src/main/resources/templates/** linguist-vendored
+
+# 🖼️ Exclude uploaded images and documents (e.g. resumes, profile photos)
+photo/** linguist-generated
+photos/** linguist-generated
+
+# 📁 Exclude zipped files (e.g. src.zip) from statistics
+*.zip linguist-generated
