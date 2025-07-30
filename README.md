@@ -49,10 +49,25 @@ src
 
 Voraussetzungen
 JDK 21
-
 Maven
-
 MySQL (mit Schema jobportal)
+
+
+## 📸 Beispiel-Screenshots
+
+### 🔍 Startseite mit Suchfunktion
+![Startseite](screenshots/start.png)
+
+### 👤 Kandidaten Dashboard mit Bewerbungsstatus
+![Candidate Dashboard](screenshots/candidate-dashboard.png)
+
+### 🧭 Gast Dashboard mit Jobsuche
+![Gast Dashboard](screenshots/guest-dashboard.png)
+
+### 📝 Job-Details mit Editieroptionen
+![Job Details](screenshots/job-details.png)
+
+
 
 🧠 Motivation
 Dieses Projekt wurde im Rahmen des folgenden Udemy-Kurses erstellt und weiterentwickelt:
