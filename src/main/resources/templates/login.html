@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+  <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/font-awesome.min.css}" />
+  <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/styles.css}" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+  <meta charset="ISO-8859-1"/>
+  <title>Login</title>
+</head>
+
+<body>
+<section class="content hidden-overflow">
+  <div class="row">
+    <!-- Left background -->
+    <div class="col-6 login_background">
+      <div class="logo_left mt-3 pt-4 ms-5 pl-5">
+        <h2 class="logo" style="color: white">
+          <span class="logo_text">rdejobs</span> <span class="logo_com">.com</span>
+        </h2>
+      </div>
+    </div>
+
+    <!-- Right form container -->
+    <div class="col-6 login_form_container">
+      <div class="login_form_box text-center">
+        <h1 class="login_heading">Login</h1>
+
+        <form th:action="@{/login}" method="post">
+
+          <!-- Email -->
+          <div class="form-group">
+            <input
+                    type="email"
+                    name="username"
+                    placeholder="Email"
+                    class="form-control login_input"
+                    required
+            />
+          </div>
+
+          <!-- Password -->
+          <div class="form-group">
+            <input
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                    class="form-control login_input"
+                    required
+            />
+          </div>
+
+          <!-- Remember / Forgot -->
+          <div class="clearfix mb-3 text-start">
+            <label class="form-check-label">
+              <input type="checkbox" /> Remember me
+            </label>
+            <a href="#" class="login_link float-end">Forgot Password?</a>
+          </div>
+
+          <!-- Submit -->
+          <div class="form-group mb-4">
+            <button type="submit" class="login_btn">Log in</button>
+          </div>
+
+          <!-- Register link -->
+          <p>
+            Are you a new user?
+            <a class="login_link" th:href="@{/register}">Register now</a>
+          </p>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script type="text/javascript" th:src="@{/webjars/jquery/jquery.min.js}"></script>
+<script type="text/javascript" th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+</body>
+</html>
